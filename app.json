@@ -25,7 +25,7 @@
     },
     "ENV": {
       "description": "لا تغير هذه القيمه",
-      "value": "ANYTHING"
+      "value": "https://github.com/Fox455664/fox-noor.git"
     },
     "COMMAND_HAND_LER": {
       "description": "لا تغير هذه القيمه",
