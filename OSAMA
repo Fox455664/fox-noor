@@ -6,10 +6,10 @@ _get_ziplink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "sbb_b" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1NPVVJDRS1TUElERVIvV1dXTDUvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
+        echo "aHR0cHMaHR0cHM6Ly9naXRodWIuY29tL0ZveDQ1NTY2NC9Gb3h4NzcvYXJjaGl2ZS9tYXN0ZXIuemlw1TUElERVIvV1dXTDUvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     elif [[ $UPSTREAM_REPO == "beta" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1NPVVJDRS1TUElERVIvV1dXTDUvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
+        echo "aHR0cHMaHR0cHM6Ly9naXRodWIuY29tL0ZveDQ1NTY2NC9Gb3h4NzcvYXJjaGl2ZS9tYXN0ZXIuemlw1TUElERVIvV1dXTDUvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -19,7 +19,7 @@ _get_ziplink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1NPVVJDRS1TUElERVIvV1dXTDUvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
+        echo "aHR0cHMaHR0cHM6Ly9naXRodWIuY29tL0ZveDQ1NTY2NC9Gb3h4NzcvYXJjaGl2ZS9tYXN0ZXIuemlw1TUElERVIvV1dXTDUvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     fi
 }
 
@@ -29,15 +29,15 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "sbb_b" ]]
     then
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1NPVVJDRS1TUElERVIvV1dXTDUuZ2l0" | base64 -d`
+        rlink=`echo "aHR0cHMaHR0cHM6Ly9naXRodWIuY29tL0ZveDQ1NTY2NC9Gb3h4NzcaHR0cHM6Ly9naXRodWIuY29tL0ZveDQ1NTY2NC9Gb3h4NzcuZ2l0uZ2l0" | base64 -d`
     elif [[ $UPSTREAM_REPO == "beta" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1NPVVJDRS1TUElERVIvV1dXTDU=" | base64 -d
+        echo "aHR0cHMaHR0cHM6Ly9naXRodWIuY29tL0ZveDQ1NTY2NC9Gb3h4NzcaHR0cHM6Ly9naXRodWIuY29tL0ZveDQ1NTY2NC9Gb3h4NzcuZ2l0=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1NPVVJDRS1TUElERVIvV1dXTDUuZ2l0" | base64 -d`
+        rlink=`echo "aHR0cHMaHR0cHM6Ly9naXRodWIuY29tL0ZveDQ1NTY2NC9Gb3h4NzcaHR0cHM6Ly9naXRodWIuY29tL0ZveDQ1NTY2NC9Gb3h4NzcuZ2l0uZ2l0" | base64 -d`
     fi
     echo "$rlink"
 }
@@ -89,7 +89,7 @@ _set_bot () {
     _run_cat_git
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     chmod -R 755 bin
-    echo "    جار بدء سبايدر    "
+    echo "    جار بدء فوكس    "
     echo "
 
     "
