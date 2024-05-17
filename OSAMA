@@ -93,7 +93,7 @@ _set_bot () {
     echo "
 
     "
-    python3 -m Foxx77
+    python3 -m WWWL5
 }
 
 _set_bot
