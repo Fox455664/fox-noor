@@ -50,7 +50,7 @@ _run_python_code() {
 _run_catpack_git() {
     $(_run_python_code 'from git import Repo
 import sys
-OFFICIAL_UPSTREAM_REPO = "https://github.com/Fox455664/fox-noor.git"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/Fox455664/Foxx77.git"
 ACTIVE_BRANCH_NAME = "master"
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
@@ -93,7 +93,7 @@ _set_bot () {
     echo "
 
     "
-    python3 -m WWWL5
+    python3 -m Foxx77
 }
 
 _set_bot
